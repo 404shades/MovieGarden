@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.example.rohanmalik.finalmovie.UpcomingMovies">
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:elevation="4dp"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="#66000000"
+        android:id="@+id/cardMovie1">
+    <com.daimajia.slider.library.SliderLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/slider"
+        app:pager_animation="CubeIn"
+        app:auto_cycle="true"
+        app:indicator_visibility="visible"
+        app:pager_animation_span="1100" />
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:selected_color="#ffffff"
+        app:unselected_color="#99ffffff"
+        app:shape="rect"
+        app:selected_padding_left="5dp"
+        app:selected_padding_right="5dp"
+        app:unselected_padding_left="5dp"
+        app:unselected_padding_right="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/slider"
+        app:selected_width="6dp"
+        app:selected_height="6dp"
+        app:unselected_width="6dp"
+        app:unselected_height="6dp"
+        android:layout_marginBottom="20dp"/>
+</android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardMovie1"
+        android:elevation="4dp"
+        app:cardCornerRadius="2dp"
+        android:id="@+id/movieCard2"
+        app:cardBackgroundColor="#66000000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textSize="23sp"
+                style="@style/TextAppearance.AppCompat"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:id="@+id/TitleUpcomingMovie"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/recycler_upcoming_movie"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movieCard2"
+        android:elevation="4dp"
+        app:cardCornerRadius="2dp"
+        app:cardBackgroundColor="#66000000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:id="@+id/cardMovie3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textSize="23sp"
+                style="@style/TextAppearance.AppCompat"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:id="@+id/TitleInThetresMovie"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/recycler_running_movie"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardMovie3"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:padding="0dp"
+        android:id="@+id/recycleGeneres"
+        android:orientation="vertical"/>
+</RelativeLayout>
+</ScrollView>

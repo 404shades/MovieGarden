@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">The Movie</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="API_KEY">1a43f1f22e3cf15ce2cfd8ca5af13e6f</string>
+    <string name="account_balance">Account Balance</string>
+    <string name="balance_currency">Balance Currency</string>
+    <string name="balance_amount">Balance Amount</string>
+</resources>

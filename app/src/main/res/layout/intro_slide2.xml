@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/flash">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BA000000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="100dp"
+        android:textSize="32sp"
+        style="@style/TextAppearance.AppCompat"
+        android:gravity="center_horizontal"
+        android:id="@+id/MovieContentIntro"/>
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/cw_logo"
+        android:layout_centerInParent="true"
+        android:id="@+id/popCorn"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_below="@id/popCorn"
+    android:textSize="24sp"
+    android:layout_marginTop="25dp"
+    android:textColor="#ffffff"
+    android:id="@+id/MovieIntroContinue"/>
+</RelativeLayout>

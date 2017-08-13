@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/the_dark">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BA000000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/WelcomeUserText"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+        android:layout_marginTop="100dp"
+        style="@style/TextAppearance.AppCompat"/>
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/movies"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        android:id="@+id/logo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="40dp"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:id="@+id/MovieGarden"/>
+</RelativeLayout>
